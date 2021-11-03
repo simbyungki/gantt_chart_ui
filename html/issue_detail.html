@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="referrer" content="always">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<!-- No cache -->
+	<meta http-equiv="Expires" content="-1">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache; no-store; no-save">
+	<title>GANT CHART</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../resources/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/common.css">	
+	<style>
+		html, body, #wrap {height:100%; background:#fff;}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<header id="header">
+			<div class="row top">
+				<h1 class="bi"><a href="javascript:;"><i class="far fa-calendar-check"></i> <strong>AUTOPLUS</strong> ROADMAP</a></h1>
+				<div class="welcome">
+					<p class="txt"><strong>심병기</strong>님 반갑습니다.</p>
+					<a href="javascript:;" class="btn btn-gray">로그아웃</a>
+				</div>
+			</div>
+			<div class="row bottom">
+				<nav class="menu">
+					<li><a href="gant_chart_project.html">Project List</a></li>
+					<li><a href="gant_chart_resource.html">Resource List</a></li>
+					<li class="active"><a href="issue_list.html">Issue List</a></li>
+					<li><a href="gant_chart_archive.html">Archive List</a></li>
+				</nav>
+			</div>
+		</header>
+		<div class="container">
+			<div class="inner">
+				<div class="detail-box">
+					<table class="h-info-table">
+						<colgroup>
+							<col style="width:15%;">
+							<col style="width:35%;">
+							<col style="width:15%;">
+							<col style="width:35%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>Project &gt; Task &gt; Work</th>
+								<td colspan="3">
+									<p class="project-info"><strong>N-탁송 <span class="arrow">&gt;</span> 탁송 FR 개발 <span class="arrow">&gt;</span> 로그인기능개발(점유인증기능)</strong></p>
+								</td>
+							</tr>
+							<tr>
+								<th>등록자</th>
+								<td>김지운</td>
+								<th>구분</th>
+								<td>
+									<span class="status issue">이슈</span>
+								</td>
+							</tr>
+							<tr>
+								<th>등록일시</th>
+								<td>2021-05-08 10:06:15</td>
+								<th>수정일시</th>
+								<td colspan="3">2021-05-09 11:10:10</td>
+							</tr>
+							<tr>
+								<th>제목</th>
+								<td colspan="3">
+									<p>작업자 변경(신도연->정한별)</p>
+								</td>
+							</tr>
+							<tr>
+								<th>내용</th>
+								<td colspan="3">
+									<p>
+										정한별 대리가 차얼마 서비스 리뉴얼이 개발이 완료되어<br>
+										탁송앱 모바일 버전을 이어서 개발 진행 하게되었습니다.
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="btns mg-top20 a-center">
+						<a href="issue_list.html" class="btn btn-m btn-blue">목록으로</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Javascript -->
+<script src="https://kit.fontawesome.com/bd87caee48.js" crossorigin="anonymous"></script>
+<script src="../resources/js/jquery-1.12.4.min.js"></script>
+<script src="../resources/js/jquery-ui.min.js"></script>
+<script src="../resources/js/jquery.cookie.1.4.1.js"></script>
+<script src="../resources/js/common.js"></script>
+<script>
+$(function(){
+	//특정 위치로 바로 이동
+	//scrollLeftTo(45);	
+});
+</script>
+</body>
+</html>

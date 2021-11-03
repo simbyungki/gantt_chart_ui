@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="referrer" content="always">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<!-- No cache -->
+	<meta http-equiv="Expires" content="-1">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache; no-store; no-save">
+	<title>GANT CHART</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../resources/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/common.css">	
+	<style>
+		html, body, #wrap {height:100%; background:#fff;}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<header id="header">
+			<div class="row top">
+				<h1 class="bi"><a href="javascript:;"><i class="far fa-calendar-check"></i> <strong>AUTOPLUS</strong> ROADMAP</a></h1>
+				<div class="welcome">
+					<p class="txt"><strong>심병기</strong>님 반갑습니다.</p>
+					<a href="javascript:;" class="btn btn-gray">로그아웃</a>
+				</div>
+			</div>
+			<div class="row bottom">
+				<nav class="menu">
+					<li><a href="gant_chart_project.html">Project List</a></li>
+					<li class="active"><a href="gant_chart_resource.html">Resource List</a></li>
+					<li><a href="issue_list.html">Issue List</a></li>
+					<li><a href="gant_chart_archive.html">Archive List</a></li>
+				</nav>
+			</div>
+		</header>
+		<div class="container">
+			<div class="gant-chart">
+				<div class="left">
+					<div class="header">
+						<span class="name">Resource &gt; Work</span>
+						<span class="resource">Resource</span>
+						<span class="duration">Duration</span>
+						<span class="start-date">Start</span>
+						<span class="end-date">End</span>
+					</div>
+					<ul>
+						<li class="list-r-01">
+							<a href="javascript:;">
+								<p class="name">(퍼블리싱) 심병기</p>
+								<span class="resource">심병기</span>
+								<span class="duration">7days</span>
+								<span class="start-date">2021-04-21</span>
+								<span class="end-date">2021-05-01</span>
+							</a>
+						</li>
+						<li class="list-w-02">
+							<a href="javascript:;">
+								<p class="name"><strong>AP</strong> <span class="arrow">&gt;</span> Front <span class="arrow">&gt;</span> 스타일 가이드 생성 </p>
+								<span class="resource">심병기</span>
+								<span class="duration">3days</span>
+								<span class="start-date">2021-04-23</span>
+								<span class="end-date">2021-04-26</span>
+							</a>
+						</li>
+						<li class="list-w-03">
+							<a href="javascript:;">
+								<p class="name"><strong>AP</strong> <span class="arrow">&gt;</span> Front <span class="arrow">&gt;</span> 찾케서 리뉴얼 </p>
+								<span class="resource">심병기</span>
+								<span class="duration">3days</span>
+								<span class="start-date">2021-04-26</span>
+								<span class="end-date">2021-04-27</span>
+							</a>
+						</li>
+						<li class="list-w-04">
+							<a href="javascript:;">
+								<p class="name"><strong>AUTOPLUS ROADMAP 리뉴얼</strong> <span class="arrow">&gt;</span> PC 퍼블리싱 <span class="arrow">&gt;</span> 레이아웃/스타일 가이드 (GNB, 공통 스타일) </p>
+								<span class="resource">심병기</span>
+								<span class="duration">3days</span>
+								<span class="start-date">2021-04-30</span>
+								<span class="end-date">2021-05-01</span>
+							</a>
+						</li>
+						<li class="list-r-05">
+							<a href="javascript:;">
+								<p class="name">(기획) 김진표</p>
+								<span class="resource">김진표</span>
+								<span class="duration">5days</span>
+								<span class="start-date">2021-04-09</span>
+								<span class="end-date">2021-04-13</span>
+							</a>
+						</li>
+						<li class="list-w-06">
+							<a href="javascript:;">
+								<p class="name"><strong>AUTOPLUS ROADMAP 리뉴얼</strong> <span class="arrow">&gt;</span> Front 기획 <span class="arrow">&gt;</span> 회원가입 </p>
+								<span class="resource">김진표</span>
+								<span class="duration">3days</span>
+								<span class="start-date">2021-04-09</span>
+								<span class="end-date">2021-04-13</span>
+							</a>
+						</li>
+					</ul>
+					<div class="bar"></div>
+				</div>
+				<div class="right">
+					<div class="header">
+						<div class="year">
+							<span>2021</span>
+						</div>
+						<div class="month">
+							<span style="width:650px;">04월</span>
+							<span style="width:629px;">05월</span>
+							<span style="width:650px;">06월</span>
+						</div>
+						<div class="day">
+							<span>01</span>
+							<span>02</span>
+							<span>03</span>
+							<span>04</span>
+							<span>05</span>
+							<span>06</span>
+							<span>07</span>
+							<span>08</span>
+							<span>09</span>
+							<span>10</span>
+							<span>11</span>
+							<span>12</span>
+							<span>13</span>
+							<span>14</span>
+							<span>15</span>
+							<span>16</span>
+							<span>17</span>
+							<span>18</span>
+							<span>19</span>
+							<span>20</span>
+							<span>21</span>
+							<span>22</span>
+							<span>23</span>
+							<span>24</span>
+							<span>25</span>
+							<span>26</span>
+							<span>27</span>
+							<span>28</span>
+							<span>29</span>
+							<span>30</span>
+							<span>31</span>
+							<span>01</span>
+							<span>02</span>
+							<span>03</span>
+							<span>04</span>
+							<span>05</span>
+							<span>06</span>
+							<span>07</span>
+							<span>08</span>
+							<span>09</span>
+							<span>10</span>
+							<span>11</span>
+							<span>12</span>
+							<span>13</span>
+							<span>14</span>
+							<span>15</span>
+							<span>16</span>
+							<span>17</span>
+							<span>18</span>
+							<span>19</span>
+							<span>20</span>
+							<span>21</span>
+							<span>22</span>
+							<span>23</span>
+							<span>24</span>
+							<span>25</span>
+							<span>26</span>
+							<span>27</span>
+							<span>28</span>
+							<span>29</span>
+							<span>30</span>
+							<span>01</span>
+							<span>02</span>
+							<span>03</span>
+							<span>04</span>
+							<span>05</span>
+							<span>06</span>
+							<span>07</span>
+							<span>08</span>
+							<span>09</span>
+							<span>10</span>
+							<span>11</span>
+							<span>12</span>
+							<span>13</span>
+							<span>14</span>
+							<span>15</span>
+							<span>16</span>
+							<span>17</span>
+							<span>18</span>
+							<span>19</span>
+							<span>20</span>
+							<span>21</span>
+							<span>22</span>
+							<span>23</span>
+							<span>24</span>
+							<span>25</span>
+							<span>26</span>
+							<span>27</span>
+							<span>28</span>
+							<span>29</span>
+							<span>30</span>
+							<span>31</span>
+						</div>
+					</div>
+					<ul>
+						<li class="list-r-01">
+							<span class="list-r-01_2021-04-01"></span>
+							<span class="list-r-01_2021-04-02"></span>
+							<span class="list-r-01_2021-04-03"></span>
+							<span class="list-r-01_2021-04-04"></span>
+							<span class="list-r-01_2021-04-05"></span>
+							<span class="list-r-01_2021-04-06"></span>
+							<span class="list-r-01_2021-04-07"></span>
+							<span class="list-r-01_2021-04-08"></span>
+							<span class="list-r-01_2021-04-09"></span>
+							<span class="list-r-01_2021-04-10"></span>
+							<span class="list-r-01_2021-04-11"></span>
+							<span class="list-r-01_2021-04-12"></span>
+							<span class="list-r-01_2021-04-13"></span>
+							<span class="list-r-01_2021-04-14"></span>
+							<span class="list-r-01_2021-04-15"></span>
+							<span class="list-r-01_2021-04-16"></span>
+							<span class="list-r-01_2021-04-17"></span>
+							<span class="list-r-01_2021-04-18"></span>
+							<span class="list-r-01_2021-04-19"></span>
+							<span class="list-r-01_2021-04-20"></span>
+							<span class="list-r-01_2021-04-21"></span>
+							<span class="list-r-01_2021-04-22"></span>
+							<span class="list-r-01_2021-04-23"></span>
+							<span class="list-r-01_2021-04-24"></span>
+							<span class="list-r-01_2021-04-25"></span>
+							<span class="list-r-01_2021-04-26"></span>
+							<span class="list-r-01_2021-04-27"></span>
+							<span class="list-r-01_2021-04-28"></span>
+							<span class="list-r-01_2021-04-29"></span>
+							<span class="list-r-01_2021-04-30"></span>
+							<span class="list-r-01_2021-04-31"></span>
+							<span class="list-r-01_2021-05-01"></span>
+							<span class="list-r-01_2021-05-02"></span>
+							<span class="list-r-01_2021-05-03"></span>
+							<span class="list-r-01_2021-05-04"></span>
+							<span class="list-r-01_2021-05-05"></span>
+							<span class="list-r-01_2021-05-06"></span>
+							<span class="list-r-01_2021-05-07"></span>
+							<span class="list-r-01_2021-05-08"></span>
+							<span class="list-r-01_2021-05-09"></span>
+							<span class="list-r-01_2021-05-10"></span>
+							<span class="list-r-01_2021-05-11"></span>
+							<span class="list-r-01_2021-05-12"></span>
+							<span class="list-r-01_2021-05-13"></span>
+							<span class="list-r-01_2021-05-14"></span>
+							<span class="list-r-01_2021-05-15"></span>
+							<span class="list-r-01_2021-05-16"></span>
+							<span class="list-r-01_2021-05-17"></span>
+							<span class="list-r-01_2021-05-18"></span>
+							<span class="list-r-01_2021-05-19"></span>
+							<span class="list-r-01_2021-05-20"></span>
+							<span class="list-r-01_2021-05-21"></span>
+							<span class="list-r-01_2021-05-22"></span>
+							<span class="list-r-01_2021-05-23"></span>
+							<span class="list-r-01_2021-05-24"></span>
+							<span class="list-r-01_2021-05-25"></span>
+							<span class="list-r-01_2021-05-26"></span>
+							<span class="list-r-01_2021-05-27"></span>
+							<span class="list-r-01_2021-05-28"></span>
+							<span class="list-r-01_2021-05-29"></span>
+							<span class="list-r-01_2021-05-30"></span>
+							<span class="list-r-01_2021-06-01"></span>
+							<span class="list-r-01_2021-06-02"></span>
+							<span class="list-r-01_2021-06-03"></span>
+							<span class="list-r-01_2021-06-04"></span>
+							<span class="list-r-01_2021-06-05"></span>
+							<span class="list-r-01_2021-06-06"></span>
+							<span class="list-r-01_2021-06-07"></span>
+							<span class="list-r-01_2021-06-08"></span>
+							<span class="list-r-01_2021-06-09"></span>
+							<span class="list-r-01_2021-06-10"></span>
+							<span class="list-r-01_2021-06-11"></span>
+							<span class="list-r-01_2021-06-12"></span>
+							<span class="list-r-01_2021-06-13"></span>
+							<span class="list-r-01_2021-06-14"></span>
+							<span class="list-r-01_2021-06-15"></span>
+							<span class="list-r-01_2021-06-16"></span>
+							<span class="list-r-01_2021-06-17"></span>
+							<span class="list-r-01_2021-06-18"></span>
+							<span class="list-r-01_2021-06-19"></span>
+							<span class="list-r-01_2021-06-20"></span>
+							<span class="list-r-01_2021-06-21"></span>
+							<span class="list-r-01_2021-06-22"></span>
+							<span class="list-r-01_2021-06-23"></span>
+							<span class="list-r-01_2021-06-24"></span>
+							<span class="list-r-01_2021-06-25"></span>
+							<span class="list-r-01_2021-06-26"></span>
+							<span class="list-r-01_2021-06-27"></span>
+							<span class="list-r-01_2021-06-28"></span>
+							<span class="list-r-01_2021-06-29"></span>
+							<span class="list-r-01_2021-06-30"></span>
+							<span class="list-r-01_2021-06-31"></span>
+							<div class="schedule-bar project" style="width:336px; left:420px;" title="(퍼블리싱) 심병기  (2021-04-21 ~ 2021-05-05)">
+								<div class="before">
+									<span>2021-04-21</span>
+								</div>
+								<div class="after" style="left:342px">
+									<span>2021-05-05</span>
+								</div>
+							</div>
+						</li>
+						<li class="list-w-02">
+							<span class="list-w-02_2021-04-01"></span>
+							<span class="list-w-02_2021-04-02"></span>
+							<span class="list-w-02_2021-04-03"></span>
+							<span class="list-w-02_2021-04-04"></span>
+							<span class="list-w-02_2021-04-05"></span>
+							<span class="list-w-02_2021-04-06"></span>
+							<span class="list-w-02_2021-04-07 holiday"></span>
+							<span class="list-w-02_2021-04-08 holiday"></span>
+							<span class="list-w-02_2021-04-09"></span>
+							<span class="list-w-02_2021-04-10"></span>
+							<span class="list-w-02_2021-04-11"></span>
+							<span class="list-w-02_2021-04-12"></span>
+							<span class="list-w-02_2021-04-13"></span>
+							<span class="list-w-02_2021-04-14 holiday"></span>
+							<span class="list-w-02_2021-04-15 holiday"></span>
+							<span class="list-w-02_2021-04-16"></span>
+							<span class="list-w-02_2021-04-17"></span>
+							<span class="list-w-02_2021-04-18"></span>
+							<span class="list-w-02_2021-04-19"></span>
+							<span class="list-w-02_2021-04-20"></span>
+							<span class="list-w-02_2021-04-21 holiday"></span>
+							<span class="list-w-02_2021-04-22 holiday"></span>
+							<span class="list-w-02_2021-04-23"></span>
+							<span class="list-w-02_2021-04-24"></span>
+							<span class="list-w-02_2021-04-25"></span>
+							<span class="list-w-02_2021-04-26"></span>
+							<span class="list-w-02_2021-04-27"></span>
+							<span class="list-w-02_2021-04-28 holiday"></span>
+							<span class="list-w-02_2021-04-29 holiday"></span>
+							<span class="list-w-02_2021-04-30"></span>
+							<span class="list-w-02_2021-04-31"></span>
+							<span class="list-w-02_2021-05-01"></span>
+							<span class="list-w-02_2021-05-02"></span>
+							<span class="list-w-02_2021-05-03 today"></span>
+							<span class="list-w-02_2021-05-04 holiday"></span>
+							<span class="list-w-02_2021-05-05 holiday"></span>
+							<span class="list-w-02_2021-05-06"></span>
+							<span class="list-w-02_2021-05-07"></span>
+							<span class="list-w-02_2021-05-08"></span>
+							<span class="list-w-02_2021-05-09"></span>
+							<span class="list-w-02_2021-05-10"></span>
+							<span class="list-w-02_2021-05-11 holiday"></span>
+							<span class="list-w-02_2021-05-12 holiday"></span>
+							<span class="list-w-02_2021-05-13"></span>
+							<span class="list-w-02_2021-05-14"></span>
+							<span class="list-w-02_2021-05-15"></span>
+							<span class="list-w-02_2021-05-16"></span>
+							<span class="list-w-02_2021-05-17"></span>
+							<span class="list-w-02_2021-05-18 holiday"></span>
+							<span class="list-w-02_2021-05-19 holiday"></span>
+							<span class="list-w-02_2021-05-20"></span>
+							<span class="list-w-02_2021-05-21"></span>
+							<span class="list-w-02_2021-05-22"></span>
+							<span class="list-w-02_2021-05-23"></span>
+							<span class="list-w-02_2021-05-24"></span>
+							<span class="list-w-02_2021-05-25 holiday"></span>
+							<span class="list-w-02_2021-05-26 holiday"></span>
+							<span class="list-w-02_2021-05-27"></span>
+							<span class="list-w-02_2021-05-28"></span>
+							<span class="list-w-02_2021-05-29"></span>
+							<span class="list-w-02_2021-05-30"></span>
+							<span class="list-w-02_2021-06-01"></span>
+							<span class="list-w-02_2021-06-02 holiday"></span>
+							<span class="list-w-02_2021-06-03 holiday"></span>
+							<span class="list-w-02_2021-06-04"></span>
+							<span class="list-w-02_2021-06-05"></span>
+							<span class="list-w-02_2021-06-06"></span>
+							<span class="list-w-02_2021-06-07"></span>
+							<span class="list-w-02_2021-06-08"></span>
+							<span class="list-w-02_2021-06-09 holiday"></span>
+							<span class="list-w-02_2021-06-10 holiday"></span>
+							<span class="list-w-02_2021-06-11"></span>
+							<span class="list-w-02_2021-06-12"></span>
+							<span class="list-w-02_2021-06-13"></span>
+							<span class="list-w-02_2021-06-14"></span>
+							<span class="list-w-02_2021-06-15"></span>
+							<span class="list-w-02_2021-06-16 holiday"></span>
+							<span class="list-w-02_2021-06-17 holiday"></span>
+							<span class="list-w-02_2021-06-18"></span>
+							<span class="list-w-02_2021-06-19"></span>
+							<span class="list-w-02_2021-06-20"></span>
+							<span class="list-w-02_2021-06-21"></span>
+							<span class="list-w-02_2021-06-22 holiday"></span>
+							<span class="list-w-02_2021-06-23 holiday"></span>
+							<span class="list-w-02_2021-06-24"></span>
+							<span class="list-w-02_2021-06-25"></span>
+							<span class="list-w-02_2021-06-26"></span>
+							<span class="list-w-02_2021-06-27"></span>
+							<span class="list-w-02_2021-06-28"></span>
+							<span class="list-w-02_2021-06-29 holiday"></span>
+							<span class="list-w-02_2021-06-30 holiday"></span>
+							<span class="list-w-02_2021-06-31"></span>
+							<div class="schedule-bar work" style="width:63px; left:462px; background:#dac50d;" title="스타일 가이드 생성 (2021-04-23 ~ 2021-04-26)">
+								<div class="before">
+									<span>2021-04-23</span>
+								</div>
+								<div class="after" style="left:69px">
+									<span>2021-04-26</span>
+								</div>
+							</div>
+						</li>
+						<li class="list-w-03">
+							<span class="list-w-03_2021-04-01"></span>
+							<span class="list-w-03_2021-04-02"></span>
+							<span class="list-w-03_2021-04-03"></span>
+							<span class="list-w-03_2021-04-04"></span>
+							<span class="list-w-03_2021-04-05"></span>
+							<span class="list-w-03_2021-04-06"></span>
+							<span class="list-w-03_2021-04-07 holiday"></span>
+							<span class="list-w-03_2021-04-08 holiday"></span>
+							<span class="list-w-03_2021-04-09"></span>
+							<span class="list-w-03_2021-04-10"></span>
+							<span class="list-w-03_2021-04-11"></span>
+							<span class="list-w-03_2021-04-12"></span>
+							<span class="list-w-03_2021-04-13"></span>
+							<span class="list-w-03_2021-04-14 holiday"></span>
+							<span class="list-w-03_2021-04-15 holiday"></span>
+							<span class="list-w-03_2021-04-16"></span>
+							<span class="list-w-03_2021-04-17"></span>
+							<span class="list-w-03_2021-04-18"></span>
+							<span class="list-w-03_2021-04-19"></span>
+							<span class="list-w-03_2021-04-20"></span>
+							<span class="list-w-03_2021-04-21 holiday"></span>
+							<span class="list-w-03_2021-04-22 holiday"></span>
+							<span class="list-w-03_2021-04-23"></span>
+							<span class="list-w-03_2021-04-24"></span>
+							<span class="list-w-03_2021-04-25"></span>
+							<span class="list-w-03_2021-04-26"></span>
+							<span class="list-w-03_2021-04-27"></span>
+							<span class="list-w-03_2021-04-28 holiday"></span>
+							<span class="list-w-03_2021-04-29 holiday"></span>
+							<span class="list-w-03_2021-04-30"></span>
+							<span class="list-w-03_2021-04-31"></span>
+							<span class="list-w-03_2021-05-01"></span>
+							<span class="list-w-03_2021-05-02"></span>
+							<span class="list-w-03_2021-05-03 today"></span>
+							<span class="list-w-03_2021-05-04 holiday"></span>
+							<span class="list-w-03_2021-05-05 holiday"></span>
+							<span class="list-w-03_2021-05-06"></span>
+							<span class="list-w-03_2021-05-07"></span>
+							<span class="list-w-03_2021-05-08"></span>
+							<span class="list-w-03_2021-05-09"></span>
+							<span class="list-w-03_2021-05-10"></span>
+							<span class="list-w-03_2021-05-11 holiday"></span>
+							<span class="list-w-03_2021-05-12 holiday"></span>
+							<span class="list-w-03_2021-05-13"></span>
+							<span class="list-w-03_2021-05-14"></span>
+							<span class="list-w-03_2021-05-15"></span>
+							<span class="list-w-03_2021-05-16"></span>
+							<span class="list-w-03_2021-05-17"></span>
+							<span class="list-w-03_2021-05-18 holiday"></span>
+							<span class="list-w-03_2021-05-19 holiday"></span>
+							<span class="list-w-03_2021-05-20"></span>
+							<span class="list-w-03_2021-05-21"></span>
+							<span class="list-w-03_2021-05-22"></span>
+							<span class="list-w-03_2021-05-23"></span>
+							<span class="list-w-03_2021-05-24"></span>
+							<span class="list-w-03_2021-05-25 holiday"></span>
+							<span class="list-w-03_2021-05-26 holiday"></span>
+							<span class="list-w-03_2021-05-27"></span>
+							<span class="list-w-03_2021-05-28"></span>
+							<span class="list-w-03_2021-05-29"></span>
+							<span class="list-w-03_2021-05-30"></span>
+							<span class="list-w-03_2021-06-01"></span>
+							<span class="list-w-03_2021-06-02 holiday"></span>
+							<span class="list-w-03_2021-06-03 holiday"></span>
+							<span class="list-w-03_2021-06-04"></span>
+							<span class="list-w-03_2021-06-05"></span>
+							<span class="list-w-03_2021-06-06"></span>
+							<span class="list-w-03_2021-06-07"></span>
+							<span class="list-w-03_2021-06-08"></span>
+							<span class="list-w-03_2021-06-09 holiday"></span>
+							<span class="list-w-03_2021-06-10 holiday"></span>
+							<span class="list-w-03_2021-06-11"></span>
+							<span class="list-w-03_2021-06-12"></span>
+							<span class="list-w-03_2021-06-13"></span>
+							<span class="list-w-03_2021-06-14"></span>
+							<span class="list-w-03_2021-06-15"></span>
+							<span class="list-w-03_2021-06-16 holiday"></span>
+							<span class="list-w-03_2021-06-17 holiday"></span>
+							<span class="list-w-03_2021-06-18"></span>
+							<span class="list-w-03_2021-06-19"></span>
+							<span class="list-w-03_2021-06-20"></span>
+							<span class="list-w-03_2021-06-21"></span>
+							<span class="list-w-03_2021-06-22 holiday"></span>
+							<span class="list-w-03_2021-06-23 holiday"></span>
+							<span class="list-w-03_2021-06-24"></span>
+							<span class="list-w-03_2021-06-25"></span>
+							<span class="list-w-03_2021-06-26"></span>
+							<span class="list-w-03_2021-06-27"></span>
+							<span class="list-w-03_2021-06-28"></span>
+							<span class="list-w-03_2021-06-29 holiday"></span>
+							<span class="list-w-03_2021-06-30 holiday"></span>
+							<span class="list-w-03_2021-06-31"></span>
+							<div class="schedule-bar work" style="width:42px; left:525px; background:#dac50d;" title="퍼블리싱 (2021-04-26 ~ 2021-04-27)">
+								<div class="before">
+									<span>2021-04-26</span>
+								</div>
+								<div class="after" style="left:48px">
+									<span>2021-04-27</span>
+								</div>
+							</div>
+						</li>
+						<li class="list-w-04">
+							<span class="list-w-04_2021-04-01"></span>
+							<span class="list-w-04_2021-04-02"></span>
+							<span class="list-w-04_2021-04-03"></span>
+							<span class="list-w-04_2021-04-04"></span>
+							<span class="list-w-04_2021-04-05"></span>
+							<span class="list-w-04_2021-04-06"></span>
+							<span class="list-w-04_2021-04-07 holiday"></span>
+							<span class="list-w-04_2021-04-08 holiday"></span>
+							<span class="list-w-04_2021-04-09"></span>
+							<span class="list-w-04_2021-04-10"></span>
+							<span class="list-w-04_2021-04-11"></span>
+							<span class="list-w-04_2021-04-12"></span>
+							<span class="list-w-04_2021-04-13"></span>
+							<span class="list-w-04_2021-04-14 holiday"></span>
+							<span class="list-w-04_2021-04-15 holiday"></span>
+							<span class="list-w-04_2021-04-16"></span>
+							<span class="list-w-04_2021-04-17"></span>
+							<span class="list-w-04_2021-04-18"></span>
+							<span class="list-w-04_2021-04-19"></span>
+							<span class="list-w-04_2021-04-20"></span>
+							<span class="list-w-04_2021-04-21 holiday"></span>
+							<span class="list-w-04_2021-04-22 holiday"></span>
+							<span class="list-w-04_2021-04-23"></span>
+							<span class="list-w-04_2021-04-24"></span>
+							<span class="list-w-04_2021-04-25"></span>
+							<span class="list-w-04_2021-04-26"></span>
+							<span class="list-w-04_2021-04-27"></span>
+							<span class="list-w-04_2021-04-28 holiday"></span>
+							<span class="list-w-04_2021-04-29 holiday"></span>
+							<span class="list-w-04_2021-04-30"></span>
+							<span class="list-w-04_2021-04-31"></span>
+							<span class="list-w-04_2021-05-01"></span>
+							<span class="list-w-04_2021-05-02"></span>
+							<span class="list-w-04_2021-05-03 today"></span>
+							<span class="list-w-04_2021-05-04 holiday"></span>
+							<span class="list-w-04_2021-05-05 holiday"></span>
+							<span class="list-w-04_2021-05-06"></span>
+							<span class="list-w-04_2021-05-07"></span>
+							<span class="list-w-04_2021-05-08"></span>
+							<span class="list-w-04_2021-05-09"></span>
+							<span class="list-w-04_2021-05-10"></span>
+							<span class="list-w-04_2021-05-11 holiday"></span>
+							<span class="list-w-04_2021-05-12 holiday"></span>
+							<span class="list-w-04_2021-05-13"></span>
+							<span class="list-w-04_2021-05-14"></span>
+							<span class="list-w-04_2021-05-15"></span>
+							<span class="list-w-04_2021-05-16"></span>
+							<span class="list-w-04_2021-05-17"></span>
+							<span class="list-w-04_2021-05-18 holiday"></span>
+							<span class="list-w-04_2021-05-19 holiday"></span>
+							<span class="list-w-04_2021-05-20"></span>
+							<span class="list-w-04_2021-05-21"></span>
+							<span class="list-w-04_2021-05-22"></span>
+							<span class="list-w-04_2021-05-23"></span>
+							<span class="list-w-04_2021-05-24"></span>
+							<span class="list-w-04_2021-05-25 holiday"></span>
+							<span class="list-w-04_2021-05-26 holiday"></span>
+							<span class="list-w-04_2021-05-27"></span>
+							<span class="list-w-04_2021-05-28"></span>
+							<span class="list-w-04_2021-05-29"></span>
+							<span class="list-w-04_2021-05-30"></span>
+							<span class="list-w-04_2021-06-01"></span>
+							<span class="list-w-04_2021-06-02 holiday"></span>
+							<span class="list-w-04_2021-06-03 holiday"></span>
+							<span class="list-w-04_2021-06-04"></span>
+							<span class="list-w-04_2021-06-05"></span>
+							<span class="list-w-04_2021-06-06"></span>
+							<span class="list-w-04_2021-06-07"></span>
+							<span class="list-w-04_2021-06-08"></span>
+							<span class="list-w-04_2021-06-09 holiday"></span>
+							<span class="list-w-04_2021-06-10 holiday"></span>
+							<span class="list-w-04_2021-06-11"></span>
+							<span class="list-w-04_2021-06-12"></span>
+							<span class="list-w-04_2021-06-13"></span>
+							<span class="list-w-04_2021-06-14"></span>
+							<span class="list-w-04_2021-06-15"></span>
+							<span class="list-w-04_2021-06-16 holiday"></span>
+							<span class="list-w-04_2021-06-17 holiday"></span>
+							<span class="list-w-04_2021-06-18"></span>
+							<span class="list-w-04_2021-06-19"></span>
+							<span class="list-w-04_2021-06-20"></span>
+							<span class="list-w-04_2021-06-21"></span>
+							<span class="list-w-04_2021-06-22 holiday"></span>
+							<span class="list-w-04_2021-06-23 holiday"></span>
+							<span class="list-w-04_2021-06-24"></span>
+							<span class="list-w-04_2021-06-25"></span>
+							<span class="list-w-04_2021-06-26"></span>
+							<span class="list-w-04_2021-06-27"></span>
+							<span class="list-w-04_2021-06-28"></span>
+							<span class="list-w-04_2021-06-29 holiday"></span>
+							<span class="list-w-04_2021-06-30 holiday"></span>
+							<span class="list-w-04_2021-06-31"></span>
+							<div class="schedule-bar work" style="width:42px; left:610px" title="AUTOPLUS ROADMAP 리뉴얼 > PC 퍼블리싱 > 레이아웃/스타일 가이드 (GNB, 공통 스타일) (2021-04-30 ~ 2021-05-01)">
+								<div class="before">
+									<span>2021-04-30</span>
+								</div>
+								<div class="after" style="left:48px">
+									<span>2021-05-01</span>
+								</div>
+							</div>
+						</li>
+						<li class="list-r-05">
+							<span class="list-r-05_2021-04-01"></span>
+							<span class="list-r-05_2021-04-02"></span>
+							<span class="list-r-05_2021-04-03"></span>
+							<span class="list-r-05_2021-04-04"></span>
+							<span class="list-r-05_2021-04-05"></span>
+							<span class="list-r-05_2021-04-06"></span>
+							<span class="list-r-05_2021-04-07"></span>
+							<span class="list-r-05_2021-04-08"></span>
+							<span class="list-r-05_2021-04-09"></span>
+							<span class="list-r-05_2021-04-10"></span>
+							<span class="list-r-05_2021-04-11"></span>
+							<span class="list-r-05_2021-04-12"></span>
+							<span class="list-r-05_2021-04-13"></span>
+							<span class="list-r-05_2021-04-14"></span>
+							<span class="list-r-05_2021-04-15"></span>
+							<span class="list-r-05_2021-04-16"></span>
+							<span class="list-r-05_2021-04-17"></span>
+							<span class="list-r-05_2021-04-18"></span>
+							<span class="list-r-05_2021-04-19"></span>
+							<span class="list-r-05_2021-04-20"></span>
+							<span class="list-r-05_2021-04-21"></span>
+							<span class="list-r-05_2021-04-22"></span>
+							<span class="list-r-05_2021-04-23"></span>
+							<span class="list-r-05_2021-04-24"></span>
+							<span class="list-r-05_2021-04-25"></span>
+							<span class="list-r-05_2021-04-26"></span>
+							<span class="list-r-05_2021-04-27"></span>
+							<span class="list-r-05_2021-04-28"></span>
+							<span class="list-r-05_2021-04-29"></span>
+							<span class="list-r-05_2021-04-30"></span>
+							<span class="list-r-05_2021-04-31"></span>
+							<span class="list-r-05_2021-05-01"></span>
+							<span class="list-r-05_2021-05-02"></span>
+							<span class="list-r-05_2021-05-03"></span>
+							<span class="list-r-05_2021-05-04"></span>
+							<span class="list-r-05_2021-05-05"></span>
+							<span class="list-r-05_2021-05-06"></span>
+							<span class="list-r-05_2021-05-07"></span>
+							<span class="list-r-05_2021-05-08"></span>
+							<span class="list-r-05_2021-05-09"></span>
+							<span class="list-r-05_2021-05-10"></span>
+							<span class="list-r-05_2021-05-11"></span>
+							<span class="list-r-05_2021-05-12"></span>
+							<span class="list-r-05_2021-05-13"></span>
+							<span class="list-r-05_2021-05-14"></span>
+							<span class="list-r-05_2021-05-15"></span>
+							<span class="list-r-05_2021-05-16"></span>
+							<span class="list-r-05_2021-05-17"></span>
+							<span class="list-r-05_2021-05-18"></span>
+							<span class="list-r-05_2021-05-19"></span>
+							<span class="list-r-05_2021-05-20"></span>
+							<span class="list-r-05_2021-05-21"></span>
+							<span class="list-r-05_2021-05-22"></span>
+							<span class="list-r-05_2021-05-23"></span>
+							<span class="list-r-05_2021-05-24"></span>
+							<span class="list-r-05_2021-05-25"></span>
+							<span class="list-r-05_2021-05-26"></span>
+							<span class="list-r-05_2021-05-27"></span>
+							<span class="list-r-05_2021-05-28"></span>
+							<span class="list-r-05_2021-05-29"></span>
+							<span class="list-r-05_2021-05-30"></span>
+							<span class="list-r-05_2021-06-01"></span>
+							<span class="list-r-05_2021-06-02"></span>
+							<span class="list-r-05_2021-06-03"></span>
+							<span class="list-r-05_2021-06-04"></span>
+							<span class="list-r-05_2021-06-05"></span>
+							<span class="list-r-05_2021-06-06"></span>
+							<span class="list-r-05_2021-06-07"></span>
+							<span class="list-r-05_2021-06-08"></span>
+							<span class="list-r-05_2021-06-09"></span>
+							<span class="list-r-05_2021-06-10"></span>
+							<span class="list-r-05_2021-06-11"></span>
+							<span class="list-r-05_2021-06-12"></span>
+							<span class="list-r-05_2021-06-13"></span>
+							<span class="list-r-05_2021-06-14"></span>
+							<span class="list-r-05_2021-06-15"></span>
+							<span class="list-r-05_2021-06-16"></span>
+							<span class="list-r-05_2021-06-17"></span>
+							<span class="list-r-05_2021-06-18"></span>
+							<span class="list-r-05_2021-06-19"></span>
+							<span class="list-r-05_2021-06-20"></span>
+							<span class="list-r-05_2021-06-21"></span>
+							<span class="list-r-05_2021-06-22"></span>
+							<span class="list-r-05_2021-06-23"></span>
+							<span class="list-r-05_2021-06-24"></span>
+							<span class="list-r-05_2021-06-25"></span>
+							<span class="list-r-05_2021-06-26"></span>
+							<span class="list-r-05_2021-06-27"></span>
+							<span class="list-r-05_2021-06-28"></span>
+							<span class="list-r-05_2021-06-29"></span>
+							<span class="list-r-05_2021-06-30"></span>
+							<span class="list-r-05_2021-06-31"></span>
+							<div class="schedule-bar project" style="width:105px; left:168px" title="(기획) 김진표  (2021-04-09 ~ 2021-04-13)">
+								<div class="before">
+									<span>2021-04-09</span>
+								</div>
+								<div class="after" style="left:112px">
+									<span>2021-04-13</span>
+								</div>
+							</div>
+						</li>
+						<li class="list-w-06">
+							<span class="list-w-06_2021-04-01"></span>
+							<span class="list-w-06_2021-04-02"></span>
+							<span class="list-w-06_2021-04-03"></span>
+							<span class="list-w-06_2021-04-04"></span>
+							<span class="list-w-06_2021-04-05"></span>
+							<span class="list-w-06_2021-04-06"></span>
+							<span class="list-w-06_2021-04-07 holiday"></span>
+							<span class="list-w-06_2021-04-08 holiday"></span>
+							<span class="list-w-06_2021-04-09"></span>
+							<span class="list-w-06_2021-04-10"></span>
+							<span class="list-w-06_2021-04-11"></span>
+							<span class="list-w-06_2021-04-12"></span>
+							<span class="list-w-06_2021-04-13"></span>
+							<span class="list-w-06_2021-04-14 holiday"></span>
+							<span class="list-w-06_2021-04-15 holiday"></span>
+							<span class="list-w-06_2021-04-16"></span>
+							<span class="list-w-06_2021-04-17"></span>
+							<span class="list-w-06_2021-04-18"></span>
+							<span class="list-w-06_2021-04-19"></span>
+							<span class="list-w-06_2021-04-20"></span>
+							<span class="list-w-06_2021-04-21 holiday"></span>
+							<span class="list-w-06_2021-04-22 holiday"></span>
+							<span class="list-w-06_2021-04-23"></span>
+							<span class="list-w-06_2021-04-24"></span>
+							<span class="list-w-06_2021-04-25"></span>
+							<span class="list-w-06_2021-04-26"></span>
+							<span class="list-w-06_2021-04-27"></span>
+							<span class="list-w-06_2021-04-28 holiday"></span>
+							<span class="list-w-06_2021-04-29 holiday"></span>
+							<span class="list-w-06_2021-04-30"></span>
+							<span class="list-w-06_2021-04-31"></span>
+							<span class="list-w-06_2021-05-01"></span>
+							<span class="list-w-06_2021-05-02"></span>
+							<span class="list-w-06_2021-05-03 today"></span>
+							<span class="list-w-06_2021-05-04 holiday"></span>
+							<span class="list-w-06_2021-05-05 holiday"></span>
+							<span class="list-w-06_2021-05-06"></span>
+							<span class="list-w-06_2021-05-07"></span>
+							<span class="list-w-06_2021-05-08"></span>
+							<span class="list-w-06_2021-05-09"></span>
+							<span class="list-w-06_2021-05-10"></span>
+							<span class="list-w-06_2021-05-11 holiday"></span>
+							<span class="list-w-06_2021-05-12 holiday"></span>
+							<span class="list-w-06_2021-05-13"></span>
+							<span class="list-w-06_2021-05-14"></span>
+							<span class="list-w-06_2021-05-15"></span>
+							<span class="list-w-06_2021-05-16"></span>
+							<span class="list-w-06_2021-05-17"></span>
+							<span class="list-w-06_2021-05-18 holiday"></span>
+							<span class="list-w-06_2021-05-19 holiday"></span>
+							<span class="list-w-06_2021-05-20"></span>
+							<span class="list-w-06_2021-05-21"></span>
+							<span class="list-w-06_2021-05-22"></span>
+							<span class="list-w-06_2021-05-23"></span>
+							<span class="list-w-06_2021-05-24"></span>
+							<span class="list-w-06_2021-05-25 holiday"></span>
+							<span class="list-w-06_2021-05-26 holiday"></span>
+							<span class="list-w-06_2021-05-27"></span>
+							<span class="list-w-06_2021-05-28"></span>
+							<span class="list-w-06_2021-05-29"></span>
+							<span class="list-w-06_2021-05-30"></span>
+							<span class="list-w-06_2021-06-01"></span>
+							<span class="list-w-06_2021-06-02 holiday"></span>
+							<span class="list-w-06_2021-06-03 holiday"></span>
+							<span class="list-w-06_2021-06-04"></span>
+							<span class="list-w-06_2021-06-05"></span>
+							<span class="list-w-06_2021-06-06"></span>
+							<span class="list-w-06_2021-06-07"></span>
+							<span class="list-w-06_2021-06-08"></span>
+							<span class="list-w-06_2021-06-09 holiday"></span>
+							<span class="list-w-06_2021-06-10 holiday"></span>
+							<span class="list-w-06_2021-06-11"></span>
+							<span class="list-w-06_2021-06-12"></span>
+							<span class="list-w-06_2021-06-13"></span>
+							<span class="list-w-06_2021-06-14"></span>
+							<span class="list-w-06_2021-06-15"></span>
+							<span class="list-w-06_2021-06-16 holiday"></span>
+							<span class="list-w-06_2021-06-17 holiday"></span>
+							<span class="list-w-06_2021-06-18"></span>
+							<span class="list-w-06_2021-06-19"></span>
+							<span class="list-w-06_2021-06-20"></span>
+							<span class="list-w-06_2021-06-21"></span>
+							<span class="list-w-06_2021-06-22 holiday"></span>
+							<span class="list-w-06_2021-06-23 holiday"></span>
+							<span class="list-w-06_2021-06-24"></span>
+							<span class="list-w-06_2021-06-25"></span>
+							<span class="list-w-06_2021-06-26"></span>
+							<span class="list-w-06_2021-06-27"></span>
+							<span class="list-w-06_2021-06-28"></span>
+							<span class="list-w-06_2021-06-29 holiday"></span>
+							<span class="list-w-06_2021-06-30 holiday"></span>
+							<span class="list-w-06_2021-06-31"></span>
+							<div class="schedule-bar work" style="width:105px; left:168px; background:#d00" title="AUTOPLUS ROADMAP 리뉴얼 > Front 기획 > 회원가입 (2021-04-09 ~ 2021-04-13)">
+								<div class="before">
+									<span>2021-04-09</span>
+								</div>
+								<div class="after" style="left:112px">
+									<span>2021-04-13</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<!-- 페이지 기능 -->
+				<div class="float-box min">
+					<div class="filter-header">
+						<strong class="title">상세 조건 검색</strong>
+						<div class="bar"></div>
+						<ul class="menu">
+							<li><a href="javascript:;" class="btn btn- btn-gray" onclick="layerContShow('regist-resource')">Resource 추가</a></li>
+							<li><a href="javascript:;" class="btn btn-gray" onclick="layerContShow('resource-list')">Resource 목록</a></li>
+							<li><a href="javascript:;" class="btn btn-gray" onclick="layerContShow('my-info')">Myinfo</a></li>
+							<li class="btn-size min"><a href="javascript:;" title="최대화"><i class="fas fa-caret-down"></i></a></li>
+						</ul>
+					</div>
+					<div class="filter-box">
+						<strong class="title">조건 적용</strong>
+						<div class="box mg-top0">
+							<strong class="label">작업자 명</strong>
+							<div class="row">
+								<input type="text" id="" name="" placeholder="다중검색 가능 > 이름,이름,이름" style="width:228px;">
+							</div>
+						</div>
+						<div class="box">
+							<strong class="label">프로젝트명</strong>
+							<div class="row">
+								<select name="" id="">
+									<option value="">프로젝트 전체</option>
+									<option value="">오토플러스 1.0</option>
+									<option value="">차얼마</option>
+									<option value="">차옥션 리뉴얼</option>
+								</select>
+							</div>
+						</div>
+						<div class="box">
+							<strong class="label">기간 검색</strong>
+							<div class="row">
+								<input type="text" id="" name="" class="from-date" readonly style="width:105px;">
+								<span class="txt">~</span>
+								<input type="text" id="" name="" class="to-date" readonly style="width:105px;">
+							</div>
+						</div>
+					</div>
+					<div class="btns mg-top15 a-center">
+						<a href="javascript:;" class="btn btn-m btn-gray">조건 초기화</a>
+						<a href="javascript:;" class="btn btn-m btn-blue">조건 적용</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- 레이어팝업 : Resource 등록 -->	
+<div class="layer-pop-content regist-resource">
+	<div class="dim"></div>
+	<div class="layer-box">
+		<div class="layer-head">
+			<h1 class="title">Resource(담당자) 추가</h1>
+			<button type="button" class="btn-layer-close" onclick="layerContHide('regist-resource')">팝업 닫기</button>
+		</div>
+		<div class="layer-cont">
+			<table class="h-info-table">
+				<colgroup>
+					<col style="width:25%;">
+					<col style="width:75%;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>아이디</th>
+						<td>
+							<input type="text" id="" name="" placeholder="" style="width:200px;">
+						</td>
+					</tr>
+					<tr>
+						<th>비밀번호</th>
+						<td>
+							<input type="password" id="" name="" style="width:200px;">
+						</td>
+					</tr>
+					<tr>
+						<th>비밀번호 확인</th>
+						<td>
+							<input type="password" id="" name="" style="width:200px;">
+						</td>
+					</tr>
+					<tr>
+						<th>권한</th>
+						<td>
+							<select name="authLevel" id="authLevel" style="width:200px;">
+								<option value="1">일반 사용자</option>
+								<option value="3">관리자</option>								
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>담당업무 구분</th>
+						<td>
+							<select name="" id="" style="width:auto; min-width:200px;">
+								<option value="">담당업무 구분을 선택하세요.</option>									
+								<option value="">현업</option>								
+								<option value="">기획자</option>								
+								<option value="">디자인</option>								
+								<option value="">퍼블</option>								
+								<option value="">개발자</option>								
+								<option value="">APP개발</option>								
+								<option value="">BA</option>																
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="layer-btns a-center">
+			<a href="javascript:;" class="btn btn-m btn-blue">등록</a>
+			<a href="javascript:;" class="btn btn-m btn-gray" onclick="layerContHide('regist-resource')">취소</a>
+		</div>
+	</div>
+</div>
+
+<!-- 레이어팝업 : Resource list -->	
+<div class="layer-pop-content resource-list">
+	<div class="dim"></div>
+	<div class="layer-box">
+		<div class="layer-head">
+			<h1 class="title">Resource 목록</h1>
+			<button type="button" class="btn-layer-close" onclick="layerContHide('resource-list')">팝업 닫기</button>
+		</div>
+		<div class="layer-cont">
+			<div class="list-box">
+				<div class="list-top clear-fix">
+					<strong class="cnt">총 <span>20</span>건</strong>
+					<div class="search-user a-right">
+						<input type="text" id="" name="" placeholder="사용자 명 입력">
+						<button class="btn-search"><i class="fas fa-search"></i></button>
+					</div>
+				</div>
+				<table>
+					<colgroup>
+						<col style="width:5%;">
+						<col style="width:25%;">
+						<col style="width:12%;">
+						<col style="width:14%;">
+						<col style="width:19%;">
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th>No</th>
+							<th>아이디</th>
+							<th>이름</th>
+							<th>담당업무</th>
+							<th>권한</th>
+							<th>수정/삭제</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="a-center">20</td>
+							<td class="a-center">cava</td>
+							<td class="a-center">이명동</td>
+							<td class="a-center">현업</td>
+							<td class="a-center">일반사용자</td>
+							<td class="a-center">
+								<a href="javascript:layerContShow('my-info')" class="btn btn-gray">수정</a>
+								<a href="javascript:alert('사용자를 삭제하시겠습니까?');" class="btn btn-gray">삭제</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="a-center">19</td>
+							<td class="a-center">kmkm20201@naver.com</td>
+							<td class="a-center">김진수</td>
+							<td class="a-center">현업</td>
+							<td class="a-center f-red">관리자</td>
+							<td class="a-center">
+								<a href="javascript:layerContShow('my-info')" class="btn btn-gray">수정</a>
+								<a href="javascript:alert('사용자를 삭제하시겠습니까?');" class="btn btn-gray">삭제</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="a-center">18</td>
+							<td class="a-center">averking</td>
+							<td class="a-center">고민주</td>
+							<td class="a-center">개발자</td>
+							<td class="a-center">일반사용자</td>
+							<td class="a-center">
+								<a href="javascript:layerContShow('my-info')" class="btn btn-gray">수정</a>
+								<a href="javascript:alert('사용자를 삭제하시겠습니까?');" class="btn btn-gray">삭제</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="a-center">17</td>
+							<td class="a-center">cava</td>
+							<td class="a-center">이명동</td>
+							<td class="a-center">현업</td>
+							<td class="a-center">일반사용자</td>
+							<td class="a-center">
+								<a href="javascript:layerContShow('my-info')" class="btn btn-gray">수정</a>
+								<a href="javascript:alert('사용자를 삭제하시겠습니까?');" class="btn btn-gray">삭제</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="a-center">16</td>
+							<td class="a-center">kmkm20201@naver.com</td>
+							<td class="a-center">김진수</td>
+							<td class="a-center">현업</td>
+							<td class="a-center f-red">관리자</td>
+							<td class="a-center">
+								<a href="javascript:layerContShow('my-info')" class="btn btn-gray">수정</a>
+								<a href="javascript:alert('사용자를 삭제하시겠습니까?');" class="btn btn-gray">삭제</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="a-center">15</td>
+							<td class="a-center">averking</td>
+							<td class="a-center">고민주</td>
+							<td class="a-center">개발자</td>
+							<td class="a-center">일반사용자</td>
+							<td class="a-center">
+								<a href="javascript:layerContShow('my-info')" class="btn btn-gray">수정</a>
+								<a href="javascript:alert('사용자를 삭제하시겠습니까?');" class="btn btn-gray">삭제</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="a-center">14</td>
+							<td class="a-center">cava</td>
+							<td class="a-center">이명동</td>
+							<td class="a-center">현업</td>
+							<td class="a-center">일반사용자</td>
+							<td class="a-center">
+								<a href="javascript:layerContShow('my-info')" class="btn btn-gray">수정</a>
+								<a href="javascript:alert('사용자를 삭제하시겠습니까?');" class="btn btn-gray">삭제</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="a-center">13</td>
+							<td class="a-center">averking</td>
+							<td class="a-center">고민주</td>
+							<td class="a-center">개발자</td>
+							<td class="a-center">일반사용자</td>
+							<td class="a-center">
+								<a href="javascript:layerContShow('my-info')" class="btn btn-gray">수정</a>
+								<a href="javascript:alert('사용자를 삭제하시겠습니까?');" class="btn btn-gray">삭제</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<nav class="pagenate">
+					<a href="javascript:;" class="prev">&lt;</a>
+					<a href="javascript:;" class="active">1</a>
+					<a href="javascript:;">2</a>
+					<a href="javascript:;">3</a>
+					<a href="javascript:;">4</a>
+					<a href="javascript:;">5</a>
+					<a href="javascript:;" class="next">&gt;</a>
+				</nav>
+			</div>
+		</div>
+		<div class="layer-btns a-center">
+			<a href="javascript:;" class="btn btn-m btn-gray" onclick="layerContHide('resource-list')">닫기</a>
+		</div>
+	</div>
+</div>
+
+<!-- 레이어팝업 : Myinfo -->	
+<div class="layer-pop-content my-info">
+	<div class="dim"></div>
+	<div class="layer-box">
+		<div class="layer-head">
+			<h1 class="title">Myinfo</h1>
+			<button type="button" class="btn-layer-close" onclick="layerContHide('my-info')">팝업 닫기</button>
+		</div>
+		<div class="layer-cont">
+			<table class="h-info-table">
+				<colgroup>
+					<col style="width:25%;">
+					<col style="width:75%;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>아이디</th>
+						<td>
+							simbk0120
+						</td>
+					</tr>
+					<tr>
+						<th>비밀번호</th>
+						<td>
+							<input type="password" id="" name="" style="width:200px;">
+						</td>
+					</tr>
+					<tr>
+						<th>이름</th>
+						<td>
+							<input type="text" id="" name="" style="width:200px;">
+						</td>
+					</tr>
+					<tr>
+						<th>담당업무 구분</th>
+						<td>
+							<select name="" id="" style="width:auto; min-width:200px;">
+								<option value="">담당업무 구분을 선택하세요.</option>									
+								<option value="">현업</option>								
+								<option value="">기획자</option>								
+								<option value="">디자인</option>								
+								<option value="">퍼블</option>								
+								<option value="">개발자</option>								
+								<option value="">APP개발</option>								
+								<option value="">BA</option>																
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="layer-btns a-center">
+			<a href="javascript:;" class="btn btn-m btn-blue">수정</a>
+			<a href="javascript:;" class="btn btn-m btn-gray" onclick="layerContHide('my-info')">취소</a>
+		</div>
+	</div>
+</div>
+
+
+<!-- Javascript -->
+<script src="https://kit.fontawesome.com/bd87caee48.js" crossorigin="anonymous"></script>
+<script src="../resources/js/jquery-1.12.4.min.js"></script>
+<script src="../resources/js/jquery-ui.min.js"></script>
+<script src="../resources/js/jquery.cookie.1.4.1.js"></script>
+<script src="../resources/js/common.js"></script>
+<script>
+$(function(){
+	//특정 위치로 바로 이동
+	//scrollLeftTo(45);	
+});
+</script>
+</body>
+</html>

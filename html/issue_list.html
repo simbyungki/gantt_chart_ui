@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="referrer" content="always">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<!-- No cache -->
+	<meta http-equiv="Expires" content="-1">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache; no-store; no-save">
+	<title>GANT CHART</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../resources/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/common.css">	
+	<style>
+		html, body, #wrap {height:100%; background:#fff;}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<header id="header">
+			<div class="row top">
+				<h1 class="bi"><a href="javascript:;"><i class="far fa-calendar-check"></i> <strong>AUTOPLUS</strong> ROADMAP</a></h1>
+				<div class="welcome">
+					<p class="txt"><strong>심병기</strong>님 반갑습니다.</p>
+					<a href="javascript:;" class="btn btn-gray">로그아웃</a>
+				</div>
+			</div>
+			<div class="row bottom">
+				<nav class="menu">
+					<li><a href="gant_chart_project.html">Project List</a></li>
+					<li><a href="gant_chart_resource.html">Resource List</a></li>
+					<li class="active"><a href="issue_list.html">Issue List</a></li>
+					<li><a href="gant_chart_archive.html">Archive List</a></li>
+				</nav>
+			</div>
+		</header>
+		<div class="container">
+			<div class="inner">
+				<div class="list-search">
+					<table>
+						<colgroup>
+							<col style="width:15%;">
+							<col style="width:35%;">
+							<col style="width:15%;">
+							<col style="width:35%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>Project 선택</th>
+								<td>
+									<div>
+										<select name="" id="">
+											<option value="">전체</option>
+											<option value="">차얼마</option>
+											<option value="">오토플러스 1.0</option>
+										</select>
+									</div>
+								</td>
+								<th>Task 선택</th>
+								<td>
+									<div>
+										<select name="" id="">
+											<option value="">전체</option>
+											<option value="">PC 퍼블리싱</option>
+											<option value="">M 퍼블리싱</option>
+											<option value="">서비스 기획</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>Work 선택</th>
+								<td>
+									<div>
+										<select name="" id="">
+											<option value="">전체</option>
+											<option value="">회원관리, 회원정보 수정</option>
+											<option value="">목록, 상세</option>
+										</select>
+									</div>
+								</td>
+								<th>이슈 구분 선택</th>
+								<td>
+									<div>
+										<select name="" id="">
+											<option value="">전체</option>
+											<option value=""> 정상</option>
+											<option value=""> 종료</option>
+											<option value=""> 지연</option>										
+											<option value=""> 이슈</option>										
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>이슈 제목</th>
+								<td>
+									<div>
+										<input type="text" id="" name="" placeholder="이슈 제목에 포함된 단어 입력">
+									</div>
+								</td>
+								<th>이슈 내용</th>
+								<td>
+									<div>
+										<input type="text" id="" name="" placeholder="이슈 내용에 포함된 단어 입력">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>작성자</th>
+								<td>
+									<div>
+										<input type="text" id="" name="" placeholder="작성자 명 입력">
+									</div>
+								</td>
+								<th></th>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="btns">
+						<a href="javascript:;" class="btn btn-blue">검색</a>
+						<a href="javascript:;" class="btn btn-gray">검색 초기화</a>
+					</div>
+				</div>
+				<div class="list-box">
+					<div class="list-top clear-fix">
+						<strong class="cnt">총 <span>4</span>건</strong>
+						<p class="summary"></p>
+					</div>
+					<table class="list-table">
+						<colgroup>
+							<col style="width:4%;">
+							<col>
+							<col style="width:12%;">
+							<col style="width:12%;">
+							<col style="width:12%;">
+							<col style="width:8%;">
+							<col style="width:8%;">
+							<col style="width:8%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>번호</th>
+								<th>이슈제목</th>
+								<th>Project</th>
+								<th>Task</th>
+								<th>Work</th>
+								<th>구분</th>
+								<th>등록일시</th>
+								<th>작성자</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>74</td>
+								<td class="a-left subject">
+									<a href="issue_detail.html"><p>작업자 변경 (신도연 &gt; 정한별)</p></a>
+								</td>
+								<td><p>N탁송</p></td>
+								<td><p>FR개발</p></td>
+								<td><p>로그인 기능 개발 (점유 인증 기능)</p></td>
+								<td><span class="status issue">이슈</span></td>
+								<td>2021-05-18<br>10:06:06</td>
+								<td>신지우</td>
+							</tr>
+							<tr>
+								<td>73</td>
+								<td class="a-left subject">
+									<a href="issue_detail.html"><p>표준작업명칭 데이터 ERP연동이 먼저</p></a>
+								</td>
+								<td><p>N-AQI/성능점검</p></td>
+								<td><p>작업지시서 기능</p></td>
+								<td><p>정비추가관련 초성검색기능 API</p></td>
+								<td><span class="status delay">지연</span></td>
+								<td>2021-05-18<br>10:06:06</td>
+								<td>김기태</td>
+							</tr>
+							<tr>
+								<td>72</td>
+								<td class="a-left subject">
+									<a href="issue_detail.html"><p>	세일즈원_재고현황(배정전) 관리프로그램 개발로 진연</p></a>
+								</td>
+								<td><p>DAA 프로젝트</p></td>
+								<td><p>딜러향 모바일 사이트 신규</p></td>
+								<td><p>FR 개발) 확정시세 - MO</p></td>
+								<td><span class="status normal">정상</span></td>
+								<td>2021-05-18<br>10:06:06</td>
+								<td>이준석</td>
+							</tr>
+							<tr>
+								<td>71</td>
+								<td class="a-left subject">
+									<a href="issue_detail.html"><p>반납 및 주행 평가 관련 관리자내 필요기능 모두 공식적으로 비젠트로에 요청한다고함.</p></a>
+								</td>
+								<td><p>DAA 프로젝트</p></td>
+								<td><p>리포팅 Web 개발 신규</p></td>
+								<td><p>FR 개발) Query 개발</p></td>
+								<td><span class="status complete">종료</span></td>
+								<td>2021-05-18<br>10:06:06</td>
+								<td>황순주</td>
+							</tr>
+						</tbody>
+					</table>
+					<nav class="pagenate">
+						<a href="javascript:;" class="prev">&lt;</a>
+						<a href="javascript:;" class="active">1</a>
+						<a href="javascript:;">2</a>
+						<a href="javascript:;">3</a>
+						<a href="javascript:;">4</a>
+						<a href="javascript:;">5</a>
+						<a href="javascript:;" class="next">&gt;</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Javascript -->
+<script src="https://kit.fontawesome.com/bd87caee48.js" crossorigin="anonymous"></script>
+<script src="../resources/js/jquery-1.12.4.min.js"></script>
+<script src="../resources/js/jquery-ui.min.js"></script>
+<script src="../resources/js/jquery.cookie.1.4.1.js"></script>
+<script src="../resources/js/common.js"></script>
+<script>
+$(function(){
+	//특정 위치로 바로 이동
+	//scrollLeftTo(45);	
+});
+</script>
+</body>
+</html>

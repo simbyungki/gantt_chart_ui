@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="referrer" content="always">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<!-- No cache -->
+	<meta http-equiv="Expires" content="-1">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache; no-store; no-save">
+	<title>어드민 템플릿</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../resources/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/common.css">	
+	<link rel="stylesheet" type="text/css" href="../resources/css/style.css">	
+</head>
+<body>
+<!-- 실제 서비스 불필요 -->
+<style>
+.sample_nav {position:fixed; left:0; bottom:0; z-index:1000; padding:10px; background:#000;}
+.sample_nav a {position:relative; padding:0 12px; color:#999;}
+.sample_nav a:after {display:block; content:""; position:absolute; left:-3px; top:4px; width:1px; height:12px; background:#999;}
+.sample_nav a:first-child:after {display:none;}
+.sample_nav a.active {color:#fff; text-decoration:underline;}
+.guide_nav {position:fixed; right:20px; bottom:40px; z-index:1100; background:rgba(0,0,0,.8);}
+.guide_nav ul li {border-top:1px solid rgba(255,255,255,.8);}
+.guide_nav ul li a {display:block; padding:12px 8px; color:#fff; font-size:13px;}
+</style>
+<nav class="sample_nav">
+	<a href="login.html">Login</a>
+	<a href="guide.html" class="active">스타일가이드</a>
+</nav>
+<!-- //실제 서비스 불필요 -->
+	<div id="wrap" class="autoplus">
+		<nav class="guide_nav">
+			<ul>
+				<li><a href="#title">콘텐츠(박스단위) 타이틀</a></li>
+				<li><a href="#font">폰트 관련</a></li>
+				<li><a href="#buttons">버튼 모음</a></li>
+				<li><a href="#layerpopup">레이어팝업</a></li>
+				<li><a href="#flex">정렬(block)</a></li>
+				<li><a href="#align">정렬(inline, inline-block)</a></li>
+				<li><a href="#list">목록 필터 , 목록</a></li>
+				<li><a href="#detail">상세(작성) 공통</a></li>
+			</ul>
+		</nav>
+		<header id="header">
+			<div class="inner">				
+				<div class="choice-service clear-fix">
+					<h1><img src="../resources/images/img_header_autoplus_ci.png" alt=""></h1>
+					<div class="choice">
+						<strong>차얼마 관리</strong>
+						<div class="services">
+							<ul>
+								<li><a href="javascript:;">통합사이트 관리</a></li>
+								<li><a href="javascript:;">차옥션 관리</a></li>
+								<li><a href="javascript:;">차얼마 관리</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="infos">
+					<p class="admin-info">경영지원본부 IT지원실 <strong>이순신 차장</strong></p>
+					<!-- <a href="javascript:;" class="btn-mypage" title="마이페이지"><i class="fas fa-user"></i></a> -->
+					<div class="manage" title="시스템관리">
+						<i class="fas fa-cog"></i>
+						<div class="my-menu">
+							<ul>
+								<li><a href="javascript:;">마이메뉴1</a></li>
+								<li><a href="javascript:;">마이메뉴2</a></li>
+								<li><a href="javascript:;">마이페이지</a></li>
+								<li><a href="javascript:;">로그아웃</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="javascript:;" class="btn-logout" title="로그아웃"><i class="fas fa-sign-out-alt"></i></a>
+				</div>
+			</div>
+		</header>	
+		<div id="container">
+			<div class="inner clear-fix">
+				<nav class="gnb">
+					<!-- <a href="javascript:;" class="btn-full"><span class="txt">접기</span> <span class="ico"><i class="fas fa-compress-alt"></i></span></a> -->
+					<ul>
+						<li>
+							<a href="javascript:;">정책관리</a>
+							<ul class="depth">
+								<li><a href="javascript:;">약관관리</a></li>
+							</ul>
+						</li>
+						<li class="active">
+							<a href="javascript:;">화면관리</a>
+							<ul class="depth">
+								<li class="active"><a href="javascript:;">배너 종합 관리</a></li>
+								<li><a href="javascript:;">관리자 이미지 관리</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;">차량관리</a>
+							<ul class="depth">
+								<li><a href="javascript:;">차량목록</a></li>
+								<li><a href="javascript:;">차량 개선 항목 관리</a></li>
+								<li><a href="javascript:;">차량 개선 목록</a></li>
+								<li><a href="javascript:;">차량 사진 관리</a></li>
+								<li><a href="javascript:;">셀링포인트 관리</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="bar"></div>
+					<!-- <div class="ico-resize">
+						<img src="../resources/images/ico_resize.png" alt="">
+					</div> -->
+				</nav>
+				<div class="content">
+					<div class="dot" id="title"></div>
+					<h2 class="page-title">페이지 타이틀</h2>
+					<div class="cont-box">
+						<div class="dot" id="title"></div>
+						<h2 class="cont-title">콘텐츠(박스단위) 타이틀</h2>
+						<div class="box">
+							
+						</div>
+					</div>
+	
+					<div class="cont-box">
+						<div class="dot" id="font"></div>
+						<h2 class="cont-title">폰트 관련</h2>
+						<div style="margin-bottom:20px; padding:10px 0 30px; border-bottom:1px solid #ddd;">
+							<div class="box">					
+								<strong class="guide-title">폰트 색상</strong><br><br>
+								<span class="f-gray">검정색</span>
+								<span class="f-blue">회색</span>
+								<span class="f-blue">파란색</span>
+								<span class="f-green">초록색</span>
+								<span class="f-sky">하늘색</span>
+								<span class="f-yellow">노란색</span>
+								<span class="f-red">빨간색</span>
+							</div>
+						</div>
+						<div style="margin-bottom:20px; padding:10px 0 30px; border-bottom:1px solid #ddd;">
+							<div class="box">					
+								<strong class="guide-title">폰트 크기, 굵기</strong><br><br>
+								<span class="f-small">작은 크기</span>
+								<span>보통 크기</span>
+								<span class="f-medium">중간 크기</span>
+								<span class="f-large">큰 크기</span>
+								<span class="f-xlarge">아주 큰 크기</span>
+
+								<span class="f-small f-bold">굵고 작은 크기</span>
+								<span class="f-bold">굵고 보통 크기</span>
+								<span class="f-bold f-medium">굵고 중간 크기</span>
+								<span class="f-bold f-large f-green">굵고 큰 크기 초록색</span>
+								<span class="f-bold f-xlarge f-red">굵고 아주 큰 크기 빨간색</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="cont-box">
+						<div class="dot" id="buttons"></div>
+						<h2 class="cont-title">버튼 모음 (a태그, button태그 클래스 공통)</h2>
+						<div class="box">					
+							<div style="margin-bottom:20px; padding:10px 0 30px; border-bottom:1px solid #ddd;">
+								<strong class="guide-title">작은 사이즈 버튼</strong><br><br>
+								<a href="javascript:;" class="btn btn-default">a 태그 버튼</a>
+								<a href="javascript:;" class="btn btn-gray">회색 버튼</a>
+								<a href="javascript:;" class="btn btn-blue">파란색 버튼</a>
+								<a href="javascript:;" class="btn btn-green">녹색 버튼</a>
+								<a href="javascript:;" class="btn btn-sky">하늘색 버튼</a>
+								<a href="javascript:;" class="btn btn-yellow">노란색 버튼</a>
+								<a href="javascript:;" class="btn btn-red">빨간색 버튼</a>
+								<a href="javascript:;" class="btn btn-disabled">비활성화 버튼</a>
+							</div>
+							<div style="margin-bottom:20px; padding:10px 0 30px; border-bottom:1px solid #ddd;">
+								<strong class="guide-title">중간 사이즈 버튼</strong><br><br>
+								<a href="javascript:;" class="btn btn-m btn-default">a 태그 버튼</a>
+								<a href="javascript:;" class="btn btn-m btn-gray">회색 버튼</a>
+								<a href="javascript:;" class="btn btn-m btn-blue">파란색 버튼</a>
+								<a href="javascript:;" class="btn btn-m btn-green">녹색 버튼</a>
+								<a href="javascript:;" class="btn btn-m btn-sky">하늘색 버튼</a>
+								<a href="javascript:;" class="btn btn-m btn-yellow">노란색 버튼</a>
+								<a href="javascript:;" class="btn btn-m btn-red">빨간색 버튼</a>
+								<a href="javascript:;" class="btn btn-m btn-disabled">비활성화 버튼</a>
+							</div>
+							<div style="margin-bottom:20px; padding:10px 0 30px; border-bottom:1px solid #ddd;">
+								<strong class="guide-title">큰 사이즈 버튼</strong><br><br>
+								<a href="javascript:;" class="btn btn-l btn-default">a 태그 버튼</a>
+								<a href="javascript:;" class="btn btn-l btn-gray">회색 버튼</a>
+								<a href="javascript:;" class="btn btn-l btn-blue">파란색 버튼</a>
+								<a href="javascript:;" class="btn btn-l btn-green">녹색 버튼</a>
+								<a href="javascript:;" class="btn btn-l btn-sky">하늘색 버튼</a>
+								<a href="javascript:;" class="btn btn-l btn-yellow">노란색 버튼</a>
+								<a href="javascript:;" class="btn btn-l btn-red">빨간색 버튼</a>
+								<a href="javascript:;" class="btn btn-l btn-disabled">비활성화 버튼</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="cont-box">
+						<div class="dot" id="layerpopup"></div>
+						<h2 class="cont-title">레이어팝업 (일반, 공지사항 등)</h2>
+						<div class="box">					
+							<div style="margin-bottom:20px; padding:10px 0 30px; border-bottom:1px solid #ddd;">
+								<a href="javascript:;" class="btn btn-m btn-default" onclick="layerContShow('notice', 300)">공지용 레이어팝업</a>
+								
+								<!-- 레이어팝업 -->
+								<div class="layer-pop-content notice default">
+									<div class="dim"></div>
+									<div class="layer-box">
+										<div class="layer-head">
+											<h1 class="title">공지사항</h1>
+											<button type="button" class="btn-layer-close" onclick="layerContHide('notice')">팝업 닫기</button>
+										</div>
+										<div class="layer-cont">
+											<p class="txt">
+												위 차량에 대해 회원님께서<br>
+												3월 22일 14시 22분에 입찰하셨다.<br>
+												기존 입찰금액 : <strong>1,250,000</strong>원
+											</p>
+										</div>
+										<div class="layer-btns a-center">
+											<a href="javascript:;" class="btn btn-m btn-blue" onclick="layerContHide('notice')">확인</a>
+										</div>
+									</div>
+								</div>
+								<!-- //레이어팝업 -->
+							</div>
+						</div>
+					</div>
+
+					<div class="cont-box">
+						<div class="dot" id="flex"></div>
+						<h2 class="cont-title">정렬 (block 속성의 태그 정렬 - 다단 레이아웃)</h2>
+						<div class="box">
+							<div style="margin-bottom:20px; padding:10px 0 30px; border-bottom:1px solid #ddd;">
+								<strong class="guide-title">예) 3단</strong><br><br>
+								<div class="flex-box">
+									<div class="width30" style="padding:25px 0; background:#ddd; text-align:center;">box01</div>
+									<div class="width35" style="padding:25px 0; background:#999; text-align:center;">box02</div>
+									<div class="width35" style="padding:25px 0; background:#ddd; text-align:center;">box02</div>
+								</div>
+								<br><br><strong class="guide-title">예) 2단</strong><br><br>
+								<div class="flex-box">
+									<div class="width75" style="padding:25px 0; background:#ddd; text-align:center;">box01</div>
+									<div class="width25" style="padding:25px 0; background:#999; text-align:center;">box02</div>
+								</div>
+								<br><br><strong class="guide-title">예) 4단</strong><br><br>
+								<div class="flex-box">
+									<div class="width25" style="padding:25px 0; background:#ddd; text-align:center;">box01</div>
+									<div class="width25" style="padding:25px 0; background:#999; text-align:center;">box02</div>
+									<div class="width25" style="padding:25px 0; background:#ddd; text-align:center;">box03</div>
+									<div class="width20" style="padding:25px 0; background:#999; text-align:center;">box04</div>
+								</div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="cont-box">
+						<div class="dot" id="align"></div>
+						<h2 class="cont-title">정렬 (inline, inline-block 속성의 태그 정렬)</h2>
+						<div class="box">					
+							<div style="margin-bottom:20px; padding:10px 0 30px; border-bottom:1px solid #ddd;">
+								<strong class="guide-title">좌측정렬</strong><br><br>
+								<div class="a-left">
+									<strong>좌측정렬</strong>
+									<a href="javascript:;" class="btn btn-gray">회색 버튼</a>
+								</div>
+							</div>
+							<div style="margin-bottom:20px; padding:10px 0 30px; border-bottom:1px solid #ddd;">
+								<strong class="guide-title">중앙정렬</strong><br><br>
+								<div class="a-center">
+									<strong>중앙정렬</strong>
+									<a href="javascript:;" class="btn btn-gray">회색 버튼</a>
+								</div>
+							</div>
+							<div style="margin-bottom:20px; padding:10px 0 30px; border-bottom:1px solid #ddd;">
+								<strong class="guide-title">우측정렬</strong><br><br>
+								<div class="a-right">
+									<strong>우측정렬</strong>
+									<a href="javascript:;" class="btn btn-gray">회색 버튼</a>
+								</div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="cont-box">
+						<div class="dot" id="list"></div>
+						<h2 class="cont-title">목록 필터 , 목록</h2>
+						<div class="box">					
+							<div style="margin-bottom:20px; padding:10px 0 30px;">
+								<div class="list-search">
+									<table>
+										<colgroup>
+											<col style="width:10%;">
+											<col style="width:23%;">
+											<col style="width:10%;">
+											<col style="width:23%;">
+											<col style="width:10%;">
+											<col style="width:24%;">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">마감일</th>
+												<td>
+													<div>
+														<input type="text" id="date01" class="date-picker from-date" name="" style="width:45%;">
+														<span class="term">~</span>
+														<input type="text" id="date02" class="date-picker to-date" name="" style="width:45%;">
+													</div>
+												</td>
+												<th scope="row">출품사</th>
+												<td>
+													<div>
+														<select name="" id="">
+															<option value="">전체</option>
+														</select>
+													</div>
+												</td>
+												<th scope="row">제조사</th>
+												<td>
+													<div>
+														<select name="" id="">
+															<option value="">전체</option>
+														</select>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">세부차명</th>
+												<td>
+													<div>
+														<input type="text" id="" name="">
+													</div>
+												</td>
+												<th scope="row">출품사</th>
+												<td>
+													<div>
+														<select name="" id="">
+															<option value="">선택없음</option>
+														</select>
+													</div>
+												</td>
+												<th scope="row">인증여부</th>
+												<td>
+													<div>
+														<select name="" id="">
+															<option value="">선택없음</option>
+														</select>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">차량번호</th>
+												<td>
+													<div>
+														<input type="text" id="" name="" placeholder="ex)20조1040">
+													</div>
+												</td>
+												<th scope="row">경매번호</th>
+												<td>
+													<div>
+														<input type="text" id="" name="" placeholder="">
+													</div>
+												</td>
+												<td colspan="2">
+													<div>
+														<label>
+															<input type="checkbox" id="" name="">
+															<span>찜 목록보기</span>
+														</label>
+														<p class="txt-guide">(체크 후 검색버튼 클릭)</p>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="btns">
+										<a href="javascript:;" class="btn btn-blue">검색</a>
+										<a href="javascript:;" class="btn btn-white">검색 초기화</a>
+										<a href="javascript:;" class="btn btn-green">엑셀 다운로드</a>
+									</div>
+								</div>
+								<div class="list-box mg-top20">
+									<div class="list-top clear-fix">
+										<strong class="cnt">총 <span>10</span>건</strong>
+										<p class="summary">리스트에 대한 설명이 필요한 경우 입력</p>
+										<select name="" id="" class="sort">
+											<option value="" selected>문의일자 순</option>
+											<option value="">간편시세 순</option>
+										</select>
+									</div>
+									<!-- 데이터가 없는 경우 -->
+									<div class="no-list">
+										<p>조회된 데이터가 없습니다.</p>
+									</div>
+									<table class="list-table type01">
+										<colgroup>
+											<col style="width:12%;">
+											<col style="width:12%;">
+											<col style="width:8%;">
+											<col style="width:52%;">
+											<col style="width:8%;">
+											<col style="width:8%;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>상품코드</th>
+												<th>차량번호</th>
+												<th>제조사</th>
+												<th>모델</th>
+												<th>판매여부</th>
+												<th>등록일</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>C102039910102</td>
+												<td>99소2010</td>
+												<td>현대</td>
+												<td>쏘나타 더 브릴리언트</td>
+												<td>5</td>
+												<td>2021-11-01</td>
+											</tr>
+											<tr>
+												<td>C102039910102</td>
+												<td>99소2010</td>
+												<td>현대</td>
+												<td>쏘나타 더 브릴리언트</td>
+												<td>5</td>
+												<td>2021-11-01</td>
+											</tr>
+											<tr>
+												<td>C102039910102</td>
+												<td>99소2010</td>
+												<td>현대</td>
+												<td>쏘나타 더 브릴리언트</td>
+												<td>5</td>
+												<td>2021-11-01</td>
+											</tr>
+											<tr>
+												<td>C102039910102</td>
+												<td>99소2010</td>
+												<td>현대</td>
+												<td>쏘나타 더 브릴리언트</td>
+												<td>5</td>
+												<td>2021-11-01</td>
+											</tr>
+											<tr>
+												<td>C102039910102</td>
+												<td>99소2010</td>
+												<td>현대</td>
+												<td>쏘나타 더 브릴리언트</td>
+												<td>5</td>
+												<td>2021-11-01</td>
+											</tr>
+										</tbody>
+									</table>
+									<nav class="pagenate">
+										<a href="javascript:;" class="move prev">&lt;</a>
+										<a href="javascript:;" class="num active">1</a>
+										<a href="javascript:;" class="num">2</a>
+										<a href="javascript:;" class="num">3</a>
+										<a href="javascript:;" class="num">4</a>
+										<a href="javascript:;" class="num">5</a>
+										<a href="javascript:;" class="move next">&gt;</a>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="cont-box">
+						<div class="dot" id="detail"></div>
+						<h2 class="cont-title">상세(작성) 공통</h2>
+						<div class="box">
+							<strong class="guide-title">작성 예</strong><br><br>
+							<div class="detail-cont">
+								<table class="h-info-table">
+									<colgroup>
+										<col style="width:10%;">
+										<col style="width:23.33%;">
+										<col style="width:10%;">
+										<col style="width:23.33%;">
+										<col style="width:10%;">
+										<col style="width:23.34%;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">배너타입</th>
+											<td>
+												<select name="" id="">
+													<option value="155">BN_AP_M_RB_LP(MO_플로팅)</option>
+													<option value="4">BN_CARLABUP(PC_리본카인스토리)</option>
+												</select>
+											</td>
+											<th scope="row">배너위치</th>
+											<td>
+												<input type="text" id="" name="">
+											</td>
+											<th scope="row">노출순번</th>
+											<td>
+												<input type="text" id="" name="">
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">PC 배너 이미지</th>
+											<td colspan="5">
+												<input type="file" id="" name="">
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">대체텍스트</th>
+											<td colspan="5">
+												<input type="text" id="" name="">
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">이벤트 설명</th>
+											<td colspan="5">
+												<textarea name="" id="" cols="30" rows="10"></textarea>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="btns a-center">
+									<a href="javascript:;" class="btn btn-m btn-blue">수정</a>
+									<a href="javascript:;" class="btn btn-m btn-red">삭제</a>
+									<a href="javascript:;" class="btn btn-m btn-gray">목록</a>
+								</div>
+							</div>
+
+							<strong class="guide-title">상세(수정) 예</strong><br><br>
+							<div class="detail-cont">
+								<table class="h-info-table">
+									<colgroup>
+										<col style="width:10%;">
+										<col style="width:23.33%;">
+										<col style="width:10%;">
+										<col style="width:23.33%;">
+										<col style="width:10%;">
+										<col style="width:23.34%;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">배너타입</th>
+											<td>
+												<select name="" id="" disabled>
+													<option value="155">BN_AP_M_RB_LP(MO_플로팅)</option>
+													<option value="4">BN_CARLABUP(PC_리본카인스토리)</option>
+												</select>
+											</td>
+											<th scope="row">배너위치</th>
+											<td>
+												<input type="text" id="" name="" value="2">
+											</td>
+											<th scope="row">노출순번</th>
+											<td>
+												<input type="text" id="" name="" value="0">
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">PC 배너 이미지</th>
+											<td colspan="5">
+												<div class="preview-img">
+													<img src="https://www.autoplus.co.kr/resources/upload/editupload/mZ8cqUgooX6UlSxETlSM%EB%A6%AC%EB%B3%B8%EC%B9%B4%EC%9D%98%207%EA%B0%80%EC%A7%80%20%ED%8A%B9%EB%B3%84%ED%95%A8_0210.png" alt="">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">대체텍스트</th>
+											<td colspan="5">
+												<input type="text" id="" name="" value="리본카의 7가지 특별한 차량">
+											</td>
+										</tr>
+										
+									</tbody>
+								</table>
+								<div class="btns a-center">
+									<a href="javascript:;" class="btn btn-m btn-blue">수정</a>
+									<a href="javascript:;" class="btn btn-m btn-red">삭제</a>
+									<a href="javascript:;" class="btn btn-m btn-gray">목록</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Javascript -->
+<script src="https://kit.fontawesome.com/bd87caee48.js" crossorigin="anonymous"></script>
+<script src="../resources/js/jquery-3.3.1.min.js"></script>
+<script src="../resources/js/jquery-ui.min.js"></script>
+<script src="../resources/js/jquery.cookie.1.4.1.js"></script>
+<script src="../resources/js/countUp.min.js"></script>
+<script src="../resources/js/common.js"></script>
+<script>
+$(function(){
+	//date picker
+	settingDatePicker();
+
+	//preview image resize
+	previewImgResize();
+
+	//공지용 레이어팝업
+	//showNoticeLayer('notice', 300);
+
+	//resize
+	$('.gnb').resizable({
+		maxWidth: 280,
+		minWidth: 45,
+		grid: [ 10, 0 ],
+		resize: function(event, ui){
+			var gnbWidth = ui.size.width;
+			var afterContWidth = gnbWidth + 20;
+			$('#container .content').css({
+				'padding-left': afterContWidth,
+				'width': 'calc(100% - '+ afterContWidth +'px)'
+			});
+		}
+	});
+});
+</script>
+</body>
+</html>
